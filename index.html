@@ -26,18 +26,18 @@
             $.getJSON("https://api.guildwars2.com/v2/wvw/matches?world=2012", function(data){
                 $(data.worlds).each(function(index, value){
                     if (value.green == 2012){
-                        var greenBorder = ["[&BNwEAAA=]", "[&BNgEAAA=]", "[&BMcIAAA=]"];
-                        var x = Math.floor((Math.random() * 3));
+                        var greenBorder = ["[&BNwEAAA=]", "[&BNgEAAA=]", "[&BMcIAAA=]", "[&BPwDAAA=]"];
+                        var x = Math.floor((Math.random() * 4));
                         var randomWp = greenBorder[x];
                         $("#wp").append(randomWp);
                     } else if ( value.blue == 2012){
-                       var blueBorder = ["[&BNYEAAA=]", "[&BNoEAAA=]", "[&BIsIAAA=]"];
-                       var x = Math.floor((Math.random() * 3));
+                       var blueBorder = ["[&BNYEAAA=]", "[&BNoEAAA=]", "[&BIsIAAA=]", "[&BPoDAAA=]"];
+                       var x = Math.floor((Math.random() * 4));
                        var randomWp = blueBorder[x];
                         $("#wp").append(randomWp);
                     } else {
-                        var redBorder = ["[&BOQIAAA=]", "[&BN4EAAA=]", "[&BNQEAAA=]"];
-                        var x = Math.floor((Math.random() * 3));
+                        var redBorder = ["[&BOQIAAA=]", "[&BN4EAAA=]", "[&BNQEAAA=]", "[&BPsDAAA=]"];
+                        var x = Math.floor((Math.random() * 4));
                         var randomWp = redBorder[x];
                         $("#wp").append(randomWp);
                     }
